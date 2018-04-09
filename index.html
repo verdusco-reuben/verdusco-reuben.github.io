@@ -1,12 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+<head>    
+    <title>Portfolio</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- grab custom css -->
+    <link type="text/css" rel="stylesheet" href="./style.css" media="screen, projection">
+    <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio Page</title>
 </head>
 <body>
-    This is the body
+    <header class="row">
+        <h1 class="">Reuben Verdusco</h1>
+        <h6 class="scroll">This is a scrolling header</h6>
+        <nav class="blue">
+            <div>
+            <a href="#about">About Me</a> |
+            <a href="#skills">Skills</a> |
+            <a href="#projects">Projects</a> |
+            <a href="#footer">Contact Info</a>
+            </div>
+        </nav>					
+    </header>
+
+
+    <main>
+        <section id="welcome">
+            <h3 id="about">About</h3>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="card">
+                    <div class="card-content">
+                        <p>I am a 22 year old software developer who gets more excited about</p>					
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="row">
+            <h3>Skills</h3>
+            <div class="divider"></div>
+            <div class="col l4">
+                <div class="card">
+                <div class="card-content">
+                    <ul class="collection with-header blue lighten-2">
+                        <li class="collection-header card-title"><h4>Languages</h4></li>
+                        <li class="collection-item"><div>HTML/HTML5<a class="icons"><i class="material-icons">star_border</i></a></div></li>
+                        <li class="collection-item"><div>CSS<a class="icons"><i class="material-icons">star_border</i></a></div></li>
+                        <li class="collection-item"><div>JavaScript/TypeScript<a class="icons"><i class="material-icons">star_border</i></a></div></li>
+                        <li class="collection-item"><div>MEAN Stack<a class="icons"><i class="material-icons">star_border</i></a></div></li>
+                        <li class="collection-item"><div>Python<a class="icons"><i class="material-icons">star_border</i></a></div></li>
+                        <li class="collection-item"><div>C#<a class="icons"><i class="material-icons">star_border</i></a></div></li>
+                    </ul>
+                </div>			
+                </div>
+            </div>
+            <div class="col l4">
+                <div class="card">
+                <div class="card-content">
+                    <ul class="collection with-header blue lighten-2">
+                        <li class="collection-header card-title"><h4>Libraries/DB's</h4></li>
+                        <li class="collection-item"><div>jQuery/AJAX<a class="icons"><i class="material-icons">library_books</i></a></div></li>
+                        <li class="collection-item"><div>Socket.io<a href="https://socket.io/" class="icons"><i class="material-icons">library_books</i></a></div></li>
+                        <li class="collection-item"><div>Charts.js<a class="icons"><i class="material-icons">library_books</i></a></div></li>
+                        <li class="collection-item"><div>NoSql (MongoDB)<a class="icons"><i class="material-icons">library_books</i></a></div></li>
+                        <li class="collection-item"><div>MySql/SQLite<a href="http://www.python-requests.org/en/master/" class="icons"><i class="material-icons">library_books</i></a></div></li>
+                        <li class="collection-item"><div>PostgreSQL<a class="icons"><i class="material-icons">library_books</i></a></div></li>
+                    </ul>
+                </div>			
+                </div>
+            </div>
+            <div class="col l4">
+                <div class="card">
+                <div class="card-content">
+                    <ul class="collection with-header blue lighten-2">
+                        <li class="collection-header card-title"><h4>Framworks</h4></li>
+                        <li class="collection-item"><div>Bootstrap</a><a class="icons"><i class="material-icons">business_center</i></a></div></li>
+                        <li class="collection-item"><div>Materialize<a class="icons"><i class="material-icons">business_center</i></a></div></li>
+                        <li class="collection-item"><div>Angular<a class="icons"><i class="material-icons">business_center</i></a></div></li>
+                        <li class="collection-item"><div>Express.js/Node.js<a class="icons"><i class="material-icons">business_center</i></a></div></li>
+                        <li class="collection-item"><div>Django/Flask<a class="icons"><i class="material-icons">business_center</i></a></div></li>
+                        <li class="collection-item"><div>ASP.NET Core<a class="icons"><i class="material-icons">business_center</i></a></div></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="projects">
+        <div class="row">
+            <div class="col l4 m6 offset-m3 s12">
+                <div class="card small">
+                    <div class="card-image">
+                        <img src="https://www.healthypawspetinsurance.com/Images/V3/DogAndPuppyInsurance/Dog_CTA_Desktop_HeroImage.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Project 1</span>
+                        <hr>
+                        <a href ="" class="icons">Check out my code! <i class="material-icons">open_in_new</i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 m6 offset-m3 s12">
+                <div class="card small">
+                    <div class="card-image">
+                        <img src="https://www.healthypawspetinsurance.com/Images/V3/DogAndPuppyInsurance/Dog_CTA_Desktop_HeroImage.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Project 2</span>
+                        <hr>
+                        <a href ="" class="icons">Check out my code! <i class="material-icons">open_in_new</i></a>
+                    </div>
+                </div>							
+            </div>
+            <div class="col l4 m6 offset-m3 s12">
+                <div class="card small">
+                    <div class="card-image">
+                        <img src="https://www.healthypawspetinsurance.com/Images/V3/DogAndPuppyInsurance/Dog_CTA_Desktop_HeroImage.jpg" alt="OOP image">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Project 3</span>
+                        <hr>
+                        <a href ="" class="icons">Check out my code! <i class="material-icons">open_in_new</i></a>
+                    </div>
+                </div>							
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <footer id="footer" class="row">
+        <h6>Mini header</h6>
+            <a href="#about">GitHub</a> |
+            <a href="#skills">LinkedIn</a> |
+            <a href="#projects">Email</a> |
+            <a href="#footer">Contact Info</a>
+        </div>					
+    </footer>
 </body>
 </html>

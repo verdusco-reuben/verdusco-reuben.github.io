@@ -1,0 +1,28 @@
+body{
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: rgb(223, 223, 212);
+}
+nav{
+    text-indent: 15px;
+}
+.scroll > a{
+    font-size: large;
+    margin: 30px;
+    
+}
+.icons{
+    float: right;
+}
+footer{
+
+}
+.scroll{
+    animation-timing-function: linear;
+    position: relative;
+    animation: mymove 10s infinite;
+}
+@keyframes mymove {
+    from {left: -300px;}
+    to {left: 1400px;}
+}
