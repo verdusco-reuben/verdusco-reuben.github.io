@@ -1,7 +1,7 @@
 body{
     margin-left: 50px;
     margin-right: 50px;
-    background-color: rgb(223, 223, 212);
+    background: #78909c;
 }
 nav{
     text-indent: 15px;
@@ -17,10 +17,17 @@ nav{
 footer{
 
 }
+.ilike-blue-container {
+    @extend .blue, .lighten-4;
+  }
 .scroll{
     animation-timing-function: linear;
     position: relative;
     animation: mymove 10s infinite;
+}
+.mini_icon{
+    height: 20px;
+    width: 20px;
 }
 @keyframes mymove {
     from {left: -300px;}
