@@ -17,9 +17,7 @@ nav{
 footer{
 
 }
-.ilike-blue-container {
-    @extend .blue, .lighten-4;
-  }
+
 .scroll{
     animation-timing-function: linear;
     position: relative;
