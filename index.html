@@ -9,14 +9,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
-  <link href="//http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-
+  
+  <!-- <link href="//http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
+  <script src="js/vendor/jquery.hashchange.min.js"></script>
   <script src="js/vendor/jquery.easytabs.min.js"></script>
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <script src="js/main.js"></script>
   <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -47,16 +48,16 @@
           <!-- Tab List -->
             <ul class='etabs'>
                 <li class='tab' id="tab-about">
-                  <a href="#about"><i class="icon-user"></i><span> About Me</span></a>
+                  <a href="#about"><i class="fas fa-user"></i><span> About Me</span></a>
                 </li>
                 <li class='tab'>
-                  <a href="#resume"><i class="icon-file-text"></i><span> Resume</span></a>
+                  <a href="#resume"><i class="fas fa-file-alt"></i><span> Resume</span></a>
                 </li>
                 <li class='tab'>
-                  <a href="#portfolio"><i class="icon-heart"></i><span> Portfolio</span></a>
+                  <a href="#portfolio"><i class="fas fa-heart"></i><span> Portfolio</span></a>
                 </li>
                 <li class='tab'>
-                  <a href="#contact"><i class="icon-envelope"></i><span> Contact</span></a>
+                  <a href="#contact"><i class="fas fa-envelope"></i><span> Contact</span></a>
                 </li>
             </ul>
           <!-- End Tab List -->
@@ -69,15 +70,19 @@
                                 <img src="./images/personal.jpg" alt="Reuben Verdusco & dogs">
                             </div>
                             <div class="info">
-                                <h2>
+                                <h3 style="color:#607d8b">
                                     Reuben Verdusco
-                                </h2>
+                                </h3>
                                 <h4>
                                    Full Stack Developer
                                 </h4>
-                                <p>
-                                    Blah..Blah..
-                                </p>
+                                <div style="word-wrap: break-word; font-size: small">
+                                    I am one of the many nerds who lives in Seattle and program more than I probably should,
+                                    just living off of caffeine and excitement of learning new technologies and helping others
+                                    learn them. Aside from programming, I spend my time hiking with my dogs, playing jazz, and
+                                    playing any Nintendo game I can get my hands on. Shoot me an email, lets build something!
+                                </div>
+                                <br>
                             </div>
                         </div>
                         <div class="g1">
@@ -117,7 +122,7 @@
                             <div class="item-box clearfix">
                               <div class="item-data">
                                 <h3><a href="https://github.com/verdusco-reuben">@verdusco-reuben</a></h3>
-                                <p>Github</p>
+                                <p><i class="fa fa-github"></i>Github</p>
                               </div>
                             </div>
                           </div>
@@ -138,19 +143,20 @@
                                         Full Stack Teaching Assistant
                                     </h5><span class="label label-info">04/2018 - CURR</span>
                                     <p>
-                                        I currently work at a coding bootcamp, spending my time assisting students with algorithms & building/debugging
-                                        full-stack projects from scratch. I also provide demos & one-on-one help to ensure every student is helped in
-                                        a way that is conducive to their individual learning style.
+                                        I currently work at a coding bootcamp, spending my time assisting students with algorithms
+                                        & building/debugging full-stack projects from scratch. I also provide demos & one-on-one help
+                                        to ensure every student is helped in a way that is conducive to their individual learning style.
                                     </p>
-
                                 </li>
                                 <li>
                                     <h5>
                                         Freelance Web Developer
-                                    </h5><span class="label label-info">2017 - 2018</span>
+                                    </h5>
+                                    <span class="label label-info">2017 - 2018</span>
                                     <p>
-                                        I spend most of my off time tinkering around with libraries and frameworks to attempt to be clever with/break things.
-                                        I also always seem to be working on some project whether it be solo or with a couple friends. (open to job offers)
+                                        I spend most of my off time tinkering around with libraries and frameworks to attempt to be
+                                        clever with/break things. I also always seem to be working on some project whether it be solo
+                                        or with a couple friends. (open to job offers)
                                     </p>
                                 </li>
                             </ul>
@@ -161,9 +167,12 @@
                                 <li>
                                     <h5>
                                         Certificate of Achievement - Coding Dojo
-                                    </h5><span class="label label-success">2017 - 2018</span>
+                                    </h5>
+                                    <span class="label label-success">2017 - 2018</span>
                                     <p>
-                                        I spent over 1,000 hours of intense studying across three frameworks (ASP.NET Core, Django, and the MEAN stack) and achieved +90% on all proficiency exams by creating/deploying a full-stack application in under 4 hours.    
+                                        I spent over 1,000 hours of intense studying across three frameworks (ASP.NET Core, Django,
+                                        and the MEAN stack) and achieved +90% on all proficiency exams by creating/deploying a
+                                        full-stack application in under 4 hours.    
                                     </p>
                                 </li>
                                 
@@ -246,7 +255,7 @@
                     <section class="clearfix">
                         <div class="mini_container">
                             <div class="g1">    
-                                <div class="image" style="vertical-align: top; display: inline-block;">
+                                <div class="image">
                                     <img src="./images/forhousing.png" alt="">
                                     <div class="image-overlay">
                                         <div class="image-link">
@@ -257,9 +266,17 @@
                             </div>
                             <h4>ForHousing</h4>
                             <br><br>
-                            <p>Worked in a group of four and took on the challenge of filtering through/managing a variety of</p>
-                            <p>datasets with a focus on providing access to free resources available to the homeless in the </p>
-                            <p>Greater Seattle area</p>
+                            Worked in a group of four and took on the challenge of filtering through/managing a variety of
+                            datasets with a focus on providing access to free resources available to the homeless in the 
+                            Greater Seattle area
+                            <br><br>
+                            <p><b>Technologies Used:</b> MongoDB, Express.js, Angular, Node.js,  data.gov APIs, Google Maps APIs</p>
+                            <p>
+                                <b>Contributors:</b>
+                                <a href="https://github.com/BC-Rand">Ben Conaty</a>,
+                                <a href="http://www.mattkrabacher.com/">Matt Krabacher</a>,
+                                <a href="https://williw3.github.io/">Lee Watterson</a>
+                            </p>
                         </div>
                         <div class="break"></div><hr>
                         <div class="mini_container">
@@ -275,12 +292,22 @@
                             </div>
                             <h4>PsyberWar</h4>
                             <br><br>
+                            
+                            Digital version of a board game currently in development. In PsyberWar, players play as either
+                            Russia or the US and vie for political control of Europe using disinformation and exploiting opponents operational security. The game is a 
+                            logic heavy strategy game including five different decks and over 150 cards. Cards are dealt differently based on how far into the game players are.
+                            The board is animated depending on relevant stats of each player and turns.
+                            <br><br>
+                           
+                            <p><b>Technologies Used:</b> C#, Unity, Unity Collaborate</p><br>
                             <p>
-                                Collaborated with three other developers to learn Unity and produce a 3D rendered version </p>
-                            <p>of a 2D Board game that will be published later this year!
+                                <b>Contributors:</b>
+                                <a href="https://github.com/BC-Rand">Ben Conaty</a>,
+                                <a href="http://www.mattkrabacher.com/">Matt Krabacher</a>,
+                                <a href="https://github.com/Brandoncold">Brandon White</a>
                             </p>
-                            <br>
                         </div>
+                        
                         <div class="break"></div><hr>
                         <div class="mini_container">
                             <div class="g1">
@@ -295,8 +322,12 @@
                             </div>
                             <h4>Master of Pokes</h4>
                             <br><br>
-                            <p>‘Facebook-type’ Pokes  app to race and be the friend with the most pokes! Completed from </p>
-                            <p>wireframe idea to deployment via AWS in 4.5 hours.</p>
+                            <div style="word-wrap: break-word;">
+                                ‘Facebook-type’ Pokes  app to race and be the friend with the most pokes! Completed from
+                                wireframe idea to deployment via AWS in 4.5 hours.
+                            </div>
+                            <br><br>
+                            <p><b>Technologies Used:</b> Python, Django, Jinja, Materialize, SQLite</p>
                         </div>
                         <div class="break"></div><hr>
                         <div class="mini_container">
@@ -311,10 +342,12 @@
                                 </div>
                             </div>
                             <h4>MiniZoo</h4>
-                            <br>
-                            <p>
-                                stuff
-                            </p>
+                            <br><br>
+                            
+                            An application not only for pet shelters to organize & describe their pets, but also a site 
+                            for any user to register a pet that may need a home.
+                            <br><br>
+                            <p><b>Technologies Used:</b> MongoDB, Express.js, Angular, Node.js, Mongoose, Materialize</p>
                         </div>
                             
                         
@@ -327,10 +360,11 @@
                        <div class="g1">
                          <div class="sny-icon-box">
                            <div class="sny-icon">
-                              <i class="icon-globe"></i>
+                              <i class=" fas fa-globe"></i>
                             </div>
                             <div class="sny-icon-content">
                               <h4>My Address</h4>
+                              <p>vedusco.reuben@gmail.com</p>
                               <p>Some Apartment 486 in Seattle</p>
                             </div>
                          </div>
@@ -338,7 +372,7 @@
                        <div class="g1">
                          <div class="sny-icon-box">
                            <div class="sny-icon">
-                              <i class="icon-phone"></i>
+                              <i class="fas fa-phone"></i>
                             </div>
                             <div class="sny-icon-content">
                               <h4>Mobile Number</h4>
@@ -349,11 +383,11 @@
                        <div class="g1">
                          <div class="sny-icon-box">
                            <div class="sny-icon">
-                              <i class="icon-user"></i>
+                              <i class="fas fa-user"></i>
                             </div>
                             <div class="sny-icon-content">
                               <h4>About Me</h4>
-                              <p>I love to work, so don't be shy, i am just an email away!</p>
+                              <p>I love to work, so don't be shy; I am just an email away!</p>
                             </div>
                          </div>
                        </div>
@@ -365,12 +399,12 @@
             </div>
         </div>
         <!-- End Tab Container -->
-        <footer>
+        <!-- <footer>
     
             <p>
-               <a href="http://thejackalofjavascript.com/" target="_blank">This is a footer that </a>
+               <a href="" target="_blank">This is a footer</a>
             </p>
-        </footer>
+        </footer> -->
     </div><!-- #main -->
 </div><!-- #main-container -->
 
