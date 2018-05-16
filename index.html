@@ -1,181 +1,380 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>    
-    <title>Portfolio</title>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-    <!-- grab custom css -->
-    <link type="text/css" rel="stylesheet" href="./style.css" media="screen, projection">
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="js/logic.js"></script>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <title>Reuben Verdusco - Full Stack Developer</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link href="//http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <script src="js/vendor/jquery.easytabs.min.js"></script>
+
+  <script src="js/main.js"></script>
+  <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+      <![endif]-->
 </head>
+  <body class="bg-fixed bg-1">
+<!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
 
-<body class="blue-grey lighten-2">
-    <header class="row">
-        <h1 class="">Reuben Verdusco</h1>
-        <h6 class="scroll">I wanted to make something very unique, something very different. -Shigeru Miyamoto</h6>
-        <nav class="blue-grey darken-4 z-depth-4">
-            <div>
-            <a href="#about">About Me</a> |
-            <a href="#skills">Skills</a> |
-            <a href="#projects">Projects</a> |
-            <a href="#footer">Contact Info</a>
-            <div class="right navright"> Mess around! Break stuff! 
-                <button class="waves-effect waves-light btn center dropdown-trigger" href='#' data-target='dropdown1' id="change_color">color</button>  |
-                <button class="waves-effect waves-light btn" id="click_me">hide</button>
+   <div class="main-container">
+    <div class="main wrapper clearfix">
+      <!-- Header Start -->
+        <header id="header">
+            <div id="logo">
+                <h2>
+                    Reuben Verdusco
+                </h2>
+                <h4 style="color: white">
+                    Full Stack Developer
+                </h4>
             </div>
-            </div>
-        </nav>					
-    </header>
+        </header>
+        <!-- Header End -->
+        <!-- Main Tab Container -->
+        <div id="tab-container" class="tab-container">
+          <!-- Tab List -->
+            <ul class='etabs'>
+                <li class='tab' id="tab-about">
+                  <a href="#about"><i class="icon-user"></i><span> About Me</span></a>
+                </li>
+                <li class='tab'>
+                  <a href="#resume"><i class="icon-file-text"></i><span> Resume</span></a>
+                </li>
+                <li class='tab'>
+                  <a href="#portfolio"><i class="icon-heart"></i><span> Portfolio</span></a>
+                </li>
+                <li class='tab'>
+                  <a href="#contact"><i class="icon-envelope"></i><span> Contact</span></a>
+                </li>
+            </ul>
+          <!-- End Tab List -->
+            <div id="tab-data-wrap">
+              <!-- About Tab Data -->
+                <div id="about">
+                    <section class="clearfix">
+                        <div class="g2">
+                            <div class="photo">
+                                <img src="./images/personal.jpg" alt="Reuben Verdusco & dogs">
+                            </div>
+                            <div class="info">
+                                <h2>
+                                    Reuben Verdusco
+                                </h2>
+                                <h4>
+                                   Full Stack Developer
+                                </h4>
+                                <p>
+                                    Blah..Blah..
+                                </p>
+                            </div>
+                        </div>
+                        <div class="g1">
+                            <div class="main-links sidebar">
+                                <ul>
+                                    <li>
+                                        <a href="#resume">View My Resume</a>
+                                    </li>
+                                    <li>
+                                        <a href="#portfolio">My Portfolio</a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact">Contact Me</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="break"></div>
+                        <div class="contact-info">
+                          <div class="g1">
+                            <div class="item-box clearfix">
+                              <div class="item-data">
+                                <h3><a href="mailto:verdusco.reuben@gmail.com">verdusco.reuben@gmail.com</a></h3>
+                                <p>Email Address</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="g1">
+                            <div class="item-box clearfix">
+                              <div class="item-data">
+                                <h3><a href="https://www.linkedin.com/in/verdusco-reuben">Reuben Verdusco</a></h3>
+                                <p>LinkedIn Profile</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="g1">
+                            <div class="item-box clearfix">
+                              <div class="item-data">
+                                <h3><a href="https://github.com/verdusco-reuben">@verdusco-reuben</a></h3>
+                                <p>Github</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </section><!-- content -->
+                </div>
+              <!-- End About Tab Data -->
+              <!-- Resume Tab Data -->
+                <div id="resume">
+                    <section class="clearfix">
+                        <div class="g2">
+                            <h3>
+                                Experience
+                            </h3>
+                            <ul class="no-list work">
+                                <li>
+                                    <h5>
+                                        Full Stack Teaching Assistant
+                                    </h5><span class="label label-info">04/2018 - CURR</span>
+                                    <p>
+                                        I currently work at a coding bootcamp, spending my time assisting students with algorithms & building/debugging
+                                        full-stack projects from scratch. I also provide demos & one-on-one help to ensure every student is helped in
+                                        a way that is conducive to their individual learning style.
+                                    </p>
 
-    <main>
-        <section id="welcome">
-            <h3 id="about">About</h3>
-            <div class="divider"></div>
-            <br>
-            <div class="row">
-                <div class="card z-depth-5">
-                    <div class="card-content">
-                        <p>I am a 22 year old software developer who is constantly intrigued by new technologies and how to utilize them when solving new problems. Aside from tech, I spend most of my time with my dog and/or friends, either outdoors, listening to jazz, trying new foods, or just playing videogames (like the stereotype entails)!</p>					    
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="skills" class="row">
-            <h3>Skills</h3>
-            <div class="divider"></div>
-            <br>
-            <div class="col l4">
-                <div class="card z-depth-4">
-                <div class="card-content">
-                    <ul class="collection with-header blue-grey darken-4">
-                        <li class="collection-header card-title"><h4>Languages</h4></li>
-                        <li class="collection-item"><div>HTML/HTML5<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="icons"><i class="material-icons blue-grey-text text-darken-4">star_border</i></a></div></li>
-                        <li class="collection-item"><div>CSS<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="icons"><i class="material-icons blue-grey-text text-darken-4">star_border</i></a></div></li>
-                        <li class="collection-item"><div>JavaScript/TypeScript<a href="https://www.javascript.com/" class="icons"><i class="material-icons blue-grey-text text-darken-4">star_border</i></a></div></li>
-                        <li class="collection-item"><div>MEAN Stack<a href="http://mean.io/" class="icons"><i class="material-icons blue-grey-text text-darken-4">star_border</i></a></div></li>
-                        <li class="collection-item"><div>Python<a href="https://www.python.org/" class="icons"><i class="material-icons blue-grey-text text-darken-4">star_border</i></a></div></li>
-                        <li class="collection-item"><div>C#<a href="https://docs.microsoft.com/en-us/dotnet/csharp/" class="icons"><i class="material-icons blue-grey-text text-darken-4">star_border</i></a></div></li>
-                    </ul>
-                </div>			
-                </div>
-            </div>
-            <div class="col l4">
-                <div class="card z-depth-4">
-                <div class="card-content">
-                    <ul class="collection with-header blue-grey darken-4">
-                        <li class="collection-header card-title"><h4>Libraries/DB's</h4></li>
-                        <li class="collection-item"><div>jQuery/AJAX<a href="http://api.jquery.com/" class="icons"><i class="material-icons blue-grey-text text-darken-4">library_books</i></a></div></li>
-                        <li class="collection-item"><div>Socket.io<a href="https://socket.io/" class="icons"><i class="material-icons blue-grey-text text-darken-4">library_books</i></a></div></li>
-                        <li class="collection-item"><div>Charts.js<a href="https://socket.io/" class="icons"><i class="material-icons blue-grey-text text-darken-4">library_books</i></a></div></li>
-                        <li class="collection-item"><div>NoSQL (MongoDB)<a href="https://www.mongodb.com/" class="icons"><i class="material-icons blue-grey-text text-darken-4">library_books</i></a></div></li>
-                        <li class="collection-item"><div>MySQL/SQLite<a href="https://www.mysql.com/" class="icons"><i class="material-icons blue-grey-text text-darken-4">library_books</i></a></div></li>
-                        <li class="collection-item"><div>PostgreSQL<a href="https://www.postgresql.org/" class="icons"><i class="material-icons blue-grey-text text-darken-4">library_books</i></a></div></li>
-                    </ul>
-                </div>			
-                </div>
-            </div>
-            <div class="col l4">
-                <div class="card z-depth-4">
-                <div class="card-content">
-                    <ul class="collection with-header blue-grey darken-4">
-                        <li class="collection-header card-title"><h4>Frameworks</h4></li>
-                        <li class="collection-item"><div>Bootstrap</a><a href="https://getbootstrap.com/" class="icons"><i class="material-icons blue-grey-text text-darken-4">business_center</i></a></div></li>
-                        <li class="collection-item"><div>Materialize<a href="http://materializecss.com/" class="icons"><i class="material-icons blue-grey-text text-darken-4">business_center</i></a></div></li>
-                        <li class="collection-item"><div>Angular<a href="https://angular.io/" class="icons"><i class="material-icons blue-grey-text text-darken-4">business_center</i></a></div></li>
-                        <li class="collection-item"><div>Express.js/Node.js<a href="https://nodejs.org/" class="icons"><i class="material-icons blue-grey-text text-darken-4">business_center</i></a></div></li>
-                        <li class="collection-item"><div>Django/Flask<a href="https://www.djangoproject.com/" class="icons"><i class="material-icons blue-grey-text text-darken-4">business_center</i></a></div></li>
-                        <li class="collection-item"><div>ASP.NET Core<a href="https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-2.1/" class="icons"><i class="material-icons blue-grey-text text-darken-4">business_center</i></a></div></li>
-                    </ul>
-                </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <section id="projects">
-        <h3>Projects</h3>
-        <div class="divider"></div>
-        <br>
-        <div class="row">
-            <div class="col l3 m6 offset-m3 s12">
-                <div class="card small z-depth-4">
-                    <div class="card-image">
-                        <img class="responsive-img" src="images/pets.png" alt="https://www.healthypawspetinsurance.com/Images/V3/DogAndPuppyInsurance/Dog_CTA_Desktop_HeroImage.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title">Mini-Zoo Shelter</span>
-                        <hr>
-                        <a href ="https://github.com/verdusco-reuben/MiniZoo" class="icons blue-grey-text text-darken-4">Check out the code! <i class="material-icons blue-grey-text text-darken-4">open_in_new</i></a>
-                    </div>
-                </div>							
-            </div>
-            <div class="col l3 m6 offset-m3 s12">
-                <div class="card small z-depth-4">
-                    <div class="card-image">
-                        <img class="responsive-img" src="images/pokes.png" alt="https://www.healthypawspetinsurance.com/Images/V3/DogAndPuppyInsurance/Dog_CTA_Desktop_HeroImage.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title">Pokes</span>
-                        <hr>
-                        <a href ="https://github.com/verdusco-reuben/poke_project" class="icons blue-grey-text text-darken-4">Check out the code! <i class="material-icons blue-grey-text text-darken-4">open_in_new</i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col l3 m6 offset-m3 s12">
-                <div class="card small z-depth-4">
-                    <div class="card-image">
-                        <img src="images/forhousing.png" alt="https://www.healthypawspetinsurance.com/Images/V3/DogAndPuppyInsurance/Dog_CTA_Desktop_HeroImage.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title">ForHousing </span>
-                        <hr>
-                        <a href ="https://github.com/BC-Rand/datagov" class="icons blue-grey-text text-darken-4">Check out the code! <i class="material-icons blue-grey-text text-darken-4">open_in_new</i></a><a href="https://www.youtube.com/watch?v=2IkvV3zlnCA&feature=youtu.be"><i class="material-icons blue-grey-text text-darken-4">local_movies</i></a>
-                    </div>
-                </div>							
-            </div>
-            <div class="col l3 m6 offset-m3 s12">
-                    <div class="card small z-depth-4">
-                        <div class="card-image">
-                            <img src="images/psyberwar.png" alt="https://www.healthypawspetinsurance.com/Images/V3/DogAndPuppyInsurance/Dog_CTA_Desktop_HeroImage.jpg">
+                                </li>
+                                <li>
+                                    <h5>
+                                        Freelance Web Developer
+                                    </h5><span class="label label-info">2017 - 2018</span>
+                                    <p>
+                                        I spend most of my off time tinkering around with libraries and frameworks to attempt to be clever with/break things.
+                                        I also always seem to be working on some project whether it be solo or with a couple friends. (open to job offers)
+                                    </p>
+                                </li>
+                            </ul>
+                            <h3>
+                                Education
+                            </h3>
+                            <ul class="no-list work">
+                                <li>
+                                    <h5>
+                                        Certificate of Achievement - Coding Dojo
+                                    </h5><span class="label label-success">2017 - 2018</span>
+                                    <p>
+                                        I spent over 1,000 hours of intense studying across three frameworks (ASP.NET Core, Django, and the MEAN stack) and achieved +90% on all proficiency exams by creating/deploying a full-stack application in under 4 hours.    
+                                    </p>
+                                </li>
+                                
+                            </ul>
                         </div>
-                        <div class="card-content">
-                            <span class="card-title">PsyberWar</span>
-                            <hr>
-                            <a href ="https://drive.google.com/drive/folders/1yafBqWAFGQ-pj7Z0mdb2IZ5a5MktlVzW" class="icons blue-grey-text text-darken-4">Check out the code! <i class="material-icons blue-grey-text text-darken-4">open_in_new</i></a>
+                        <div class="g1">
+                            <div class="sidebar">
+                                <h3>
+                                    Skills
+                                </h3>
+                                <h5>
+                                    Programming Languages
+                                </h5>
+                                <div class="meter emerald">
+                                    <span style="width: 100.3%"><span>HTML5/CSS3</span></span>
+                                </div>
+                                <div class="meter carrot">
+                                    <span style="width: 100%"><span>JavaScript/TypeScript</span></span>
+                                </div>
+                                <div class="meter sunflower">
+                                    <span style="width: 100%"><span>C#</span></span>
+                                </div>
+                                <div class="meter wisteria">
+                                    <span style="width: 100%"><span>Python</span></span>
+                                </div>
+                                <div class="break"></div>
+                                <h5>
+                                    Frameworks
+                                </h5>
+                                <div class="meter emerald">
+                                    <span style="width: 100.3%"><span>Bootstrap</span></span>
+                                </div>
+                                <div class="meter emerald">
+                                    <span style="width: 100%"><span>Materialize</span></span>
+                                </div>
+                                <div class="meter carrot">
+                                    <span style="width: 100%"><span>Angular</span></span>
+                                </div>
+                                <div class="meter carrot">
+                                    <span style="width: 100%"><span>Express.js/Node.js</span></span>
+                                </div>
+                                <div class="meter sunflower">
+                                    <span style="width: 100%"><span>ASP.NET Core</span></span>
+                                </div>
+                                <div class="meter wisteria">
+                                    <span style="width: 100%"><span>Django</span></span>
+                                </div>
+                                <div class="meter wisteria">
+                                    <span style="width: 100%"><span>Flask</span></span>
+                                </div>
+                                <div class="break"></div>
+                                <h5>
+                                    Libraries/Databases
+                                </h5>
+                                <div class="meter asbestos">
+                                    <span style="width: 100.3%"><span>AJAX/jQuery</span></span>
+                                </div>
+                                <div class="meter asbestos">
+                                    <span style="width: 100%"><span>Socket.io</span></span>
+                                </div>
+                                <div class="meter asbestos">
+                                    <span style="width: 100%"><span>Charts.js</span></span>
+                                </div>
+                                <div class="meter asbestos">
+                                    <span style="width: 100.3%"><span>NoSql (MongoDB)</span></span>
+                                </div>
+                                <div class="meter asbestos">
+                                    <span style="width: 100%"><span>MySQL/SQLite</span></span>
+                                </div>
+                                <div class="meter asbestos">
+                                    <span style="width: 100%"><span>Charts.js</span></span>
+                                </div>
+                            </div>
                         </div>
-                    </div>							
+                    </section>
                 </div>
+              <!-- End Resume Tab Data -->
+              <!-- Portfolio Tab Data -->
+                <div id="portfolio">
+                    <section class="clearfix">
+                        <div class="mini_container">
+                            <div class="g1">    
+                                <div class="image" style="vertical-align: top; display: inline-block;">
+                                    <img src="./images/forhousing.png" alt="">
+                                    <div class="image-overlay">
+                                        <div class="image-link">
+                                            <a href="https://github.com/BC-Rand/datagov" class="btn">Source Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>ForHousing</h4>
+                            <br><br>
+                            <p>Worked in a group of four and took on the challenge of filtering through/managing a variety of</p>
+                            <p>datasets with a focus on providing access to free resources available to the homeless in the </p>
+                            <p>Greater Seattle area</p>
+                        </div>
+                        <div class="break"></div><hr>
+                        <div class="mini_container">
+                            <div class="g1">
+                                <div class="image">
+                                    <img src="./images/psyberwar.png" alt="">
+                                    <div class="image-overlay">
+                                        <div class="image-link">
+                                            <a href="https://drive.google.com/drive/folders/1yafBqWAFGQ-pj7Z0mdb2IZ5a5MktlVzW" class="btn">Source Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>PsyberWar</h4>
+                            <br><br>
+                            <p>
+                                Collaborated with three other developers to learn Unity and produce a 3D rendered version </p>
+                            <p>of a 2D Board game that will be published later this year!
+                            </p>
+                            <br>
+                        </div>
+                        <div class="break"></div><hr>
+                        <div class="mini_container">
+                            <div class="g1">
+                                <div class="image">
+                                    <img src="./images/pokes.png" alt="">
+                                    <div class="image-overlay">
+                                        <div class="image-link">
+                                            <a href="https://github.com/verdusco-reuben/poke_project" class="btn">Source Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>Master of Pokes</h4>
+                            <br><br>
+                            <p>‘Facebook-type’ Pokes  app to race and be the friend with the most pokes! Completed from </p>
+                            <p>wireframe idea to deployment via AWS in 4.5 hours.</p>
+                        </div>
+                        <div class="break"></div><hr>
+                        <div class="mini_container">
+                            <div class="g1">
+                                <div class="image">
+                                    <img src="./images/pets.png" alt="">
+                                    <div class="image-overlay">
+                                        <div class="image-link">
+                                            <a href="https://github.com/verdusco-reuben/MiniZoo" class="btn">Source Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>MiniZoo</h4>
+                            <br>
+                            <p>
+                                stuff
+                            </p>
+                        </div>
+                            
+                        
+                    </section>
+                </div>
+              <!-- End Portfolio Data -->
+              <!-- Contact Tab Data -->
+                <div id="contact">
+                    <section class="clearfix">
+                       <div class="g1">
+                         <div class="sny-icon-box">
+                           <div class="sny-icon">
+                              <i class="icon-globe"></i>
+                            </div>
+                            <div class="sny-icon-content">
+                              <h4>My Address</h4>
+                              <p>Some Apartment 486 in Seattle</p>
+                            </div>
+                         </div>
+                       </div>
+                       <div class="g1">
+                         <div class="sny-icon-box">
+                           <div class="sny-icon">
+                              <i class="icon-phone"></i>
+                            </div>
+                            <div class="sny-icon-content">
+                              <h4>Mobile Number</h4>
+                              <p>(425) 583 - 6811</p>
+                            </div>
+                         </div>
+                       </div>
+                       <div class="g1">
+                         <div class="sny-icon-box">
+                           <div class="sny-icon">
+                              <i class="icon-user"></i>
+                            </div>
+                            <div class="sny-icon-content">
+                              <h4>About Me</h4>
+                              <p>I love to work, so don't be shy, i am just an email away!</p>
+                            </div>
+                         </div>
+                       </div>
+                       <div class="break"></div>
+                       
+                    </section>
+                </div>
+              <!-- End Contact Data -->
+            </div>
         </div>
-    </section>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <footer id="footer" class="row">
-        <nav class="blue-grey darken-4 center z-depth-4">
-            <a href="https://github.com/verdusco-reuben">GitHub <img class="mini_icon" src="images/github_icon.svg"></a> |
-            <a href="https://linkedin.com/in/verdusco-reuben/">LinkedIn <img class="mini_icon" src="images/linkedin_icon.png"></a> |
-            <a href="#projects">verdusco.reuben@gmail.com</a>
-        </nav>				
-    </footer>
-    <!-- <div class="card z-depth-4" id="emailcard">
-        <form action="http://formspree.io/verdusco.reuben@gmail.com" method="POST">
-            <h5>Let's chat!</h5>
-            <div class="divider"></div>
-            <label>Email:<input type="email" name="_replyto"></label>
-            <label>Body:</label><textarea name="body" class="materialize-textarea"></textarea>
-            <input type="submit" class="btn" value="Send"></form>
-    </div> -->
-    <ul id='dropdown1' class='dropdown-content'>
-            <li><a class="change_color">original</a></li>
-            <li class="divider" tabindex="-1"></li>
-            <li><a class="change_color">red</a></li>
-            <li class="divider" tabindex="-1"></li>
-            <li><a class="change_color">green</a></li>
-            <li class="divider" tabindex="-1"></li>
-            <li><a class="change_color">dont</a></li>
-    </ul>
+        <!-- End Tab Container -->
+        <footer>
+    
+            <p>
+               <a href="http://thejackalofjavascript.com/" target="_blank">This is a footer that </a>
+            </p>
+        </footer>
+    </div><!-- #main -->
+</div><!-- #main-container -->
+
+
+
 </body>
 </html>
