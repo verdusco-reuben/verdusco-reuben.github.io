@@ -537,11 +537,11 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   top: 0; left: 0; bottom: 0; right: 0;
   background-image: 
   -webkit-gradient(linear, 0 0, 100% 100%, 
-    color-stop(.25, rgba(255, 255, 255, .2)), 
-    color-stop(.25, transparent), color-stop(.5, transparent), 
-    color-stop(.5, rgba(255, 255, 255, .2)), 
+    color-stop(.15, rgba(255, 255, 255, .2)), 
+    color-stop(.25, transparent), color-stop(.5, transparent) 
+    /* color-stop(.5, rgba(255, 255, 255, .2)), 
     color-stop(.75, rgba(255, 255, 255, .2)), 
-    color-stop(.75, transparent), to(transparent)
+    color-stop(.75, transparent), to(transparent) */
     );
   background-image: 
   -moz-linear-gradient(
@@ -587,19 +587,19 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 }
 
 .emerald > span {
-  background-color: #2ecc71;
+  background-color: #569972;
 
 }
 
-.carrot > span {
-  background-color: #e67e22;
+.blueguy > span {
+  background-color: #89bdd6;
 
 }
 .wisteria > span{
   background-color: #8e44ad;
 }
 .sunflower > span{
-  background-color: #f1c40f;
+  background-color: #dbb51d;
 }
 .midnight > span{
   background-color: #2c3e50;
